@@ -86,10 +86,35 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
   .stats{grid-template-columns:repeat(2,1fr);gap:1rem .5rem}
   .entry-head{flex-direction:column;gap:.125rem}
 }
+@page{size:A4;margin:9mm 11mm}
 @media print{
+  html{font-size:12px}
   body{background:#fff}
-  .header{border-radius:0}
-  .section{box-shadow:none;border:none;padding:1rem 0}
+  .container{max-width:100%;padding:0}
+  .header{border-radius:.5rem;padding:1.125rem 1.25rem 1rem;-webkit-print-color-adjust:exact;print-color-adjust:exact;break-inside:avoid}
+  .name{font-size:1.875rem}
+  .contact-row{margin-top:.625rem}
+  .certs{margin-top:.625rem}
+  .stats{margin-top:.75rem;padding-top:.75rem}
+  .demo-links{margin-top:.625rem}
+  .section{box-shadow:none;border:none;padding:.5rem 0 0;margin-top:.25rem}
+  h2{font-size:1.25rem;padding-bottom:.375rem;margin-bottom:.5rem;break-after:avoid}
+  h3{break-after:avoid}
+  .summary p{margin-bottom:.45rem}
+  .skill-item{padding:.4rem 0;break-inside:avoid}
+  .entry{padding:.5rem 0;break-inside:avoid}
+  .work .entry{break-inside:auto}
+  .entry li{margin-bottom:.25rem;break-inside:avoid}
+  .entry-head{break-after:avoid}
+  .entry-role{break-after:avoid}
+  .entry-desc{break-after:avoid}
+  .entry ul{margin-top:.375rem}
+  .entry-desc{margin-top:.25rem}
+  .result-box{margin-top:.5rem;padding:.45rem .75rem;break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .cert-badge,.tag{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .footer{margin-top:.75rem}
+  a{color:inherit}
+  .demo-links a,.contact-row a{color:#fbbf24}
 }
 </style>
 </head>
@@ -152,7 +177,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
     </div>
   </section>
 
-  <section class="section">
+  <section class="section work">
     <h2><span class="section-emoji">💼</span>工作经历</h2>
 
     <div class="entry">
