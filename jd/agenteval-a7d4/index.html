@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="宋恒达 - AI 产品经理（Agent 应用与评测体系）简历">
+<meta name="robots" content="noindex,nofollow">
+<title>宋恒达 - AI 产品经理 · Agent 应用与评测体系 · 日均40亿Token</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-primary:#fafaf9; --bg-card:#fff; --bg-header:#18181b;
+  --text-primary:#18181b; --text-secondary:#3f3f46; --text-tertiary:#71717a; --text-inverse:#fff;
+  --accent:#d97706; --accent-hover:#b45309; --accent-light:#fef3c7; --accent-subtle:#fffbeb;
+  --border:#e4e4e7; --border-light:#f4f4f5;
+  --font-heading:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun",Georgia,serif;
+  --font-body:"Inter",system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  --shadow-card:0 1px 3px 0 rgba(0,0,0,.04),0 1px 2px -1px rgba(0,0,0,.04);
+  --radius:0.75rem;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:15px;-webkit-font-smoothing:antialiased}
+body{font-family:var(--font-body);line-height:1.6;color:var(--text-primary);background:var(--bg-primary)}
+a{color:var(--accent);text-decoration:none;transition:color .2s}
+a:hover{color:var(--accent-hover)}
+ul{list-style:none}
+::selection{background:var(--accent);color:#fff}
+.container{max-width:820px;margin:0 auto;padding:2.25rem 1.5rem 3rem}
+
+/* Header */
+.header{background:var(--bg-header);color:var(--text-inverse);border-radius:1rem;padding:2.5rem 2.25rem 2rem;text-align:center;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)}
+.name{font-family:var(--font-heading);font-size:2.25rem;font-weight:300;letter-spacing:.08em;color:#fff}
+.title-label{display:inline-block;margin-top:.625rem;font-size:.9375rem;color:#fbbf24;letter-spacing:.05em}
+.contact-row{margin-top:1.125rem;display:flex;flex-wrap:wrap;justify-content:center;gap:.375rem .625rem;font-size:.875rem;color:#d4d4d8}
+.contact-row a{color:#d4d4d8}
+.contact-row a:hover{color:#fbbf24}
+.contact-divider{color:rgba(255,255,255,.3)}
+.certs{margin-top:1rem;display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem}
+.cert-badge{font-size:.75rem;padding:.25rem .7rem;border:1px solid rgba(255,255,255,.18);border-radius:999px;color:#e4e4e7;background:rgba(255,255,255,.06)}
+.stats{margin-top:1.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;border-top:1px solid rgba(255,255,255,.12);padding-top:1.5rem}
+.stat-num{font-family:var(--font-heading);font-size:1.375rem;font-weight:500;color:#fbbf24}
+.stat-label{font-size:.75rem;color:#a1a1aa;margin-top:.125rem}
+.demo-links{margin-top:1.25rem;font-size:.8125rem;color:#a1a1aa}
+.demo-links a{color:#fbbf24;border-bottom:1px dashed rgba(251,191,36,.5);margin:0 .25rem}
+
+/* Sections */
+.section{background:var(--bg-card);border:1px solid var(--border-light);border-radius:var(--radius);box-shadow:var(--shadow-card);padding:1.75rem 2rem;margin-top:1.5rem}
+h2{font-family:var(--font-heading);font-size:1.5rem;font-weight:400;letter-spacing:-.01em;padding-bottom:.75rem;border-bottom:2px solid var(--accent-light);margin-bottom:1.25rem}
+.section-emoji{margin-right:.375rem}
+h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
+.metric{color:var(--accent-hover);font-weight:600}
+.summary p{color:var(--text-secondary);font-size:.9375rem;margin-bottom:.875rem}
+.summary p:last-child{margin-bottom:0}
+
+/* Skills */
+.skill-item{padding:.875rem 0;border-bottom:1px solid var(--border-light)}
+.skill-item:last-child{border-bottom:none;padding-bottom:0}
+.skill-item:first-child{padding-top:0}
+.skill-domain{font-size:.9375rem;font-weight:600;color:var(--text-primary)}
+.skill-caps{font-size:.875rem;color:var(--text-tertiary);margin-top:.25rem}
+
+/* Work & Projects */
+.entry{padding:1.25rem 0;border-bottom:1px solid var(--border-light)}
+.entry:last-child{border-bottom:none;padding-bottom:0}
+.entry:first-child{padding-top:0}
+.entry-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.25rem .75rem}
+.entry-meta{font-size:.8125rem;color:var(--text-tertiary)}
+.entry-role{font-size:.875rem;color:var(--accent-hover);margin-top:.125rem;font-weight:500}
+.entry-desc{font-size:.875rem;color:var(--text-secondary);margin-top:.5rem}
+.entry ul{margin-top:.625rem}
+.entry li{font-size:.875rem;color:var(--text-secondary);padding-left:1.125rem;position:relative;margin-bottom:.4rem}
+.entry li::before{content:"•";position:absolute;left:.25rem;color:var(--accent)}
+.result-box{margin-top:.75rem;background:var(--accent-subtle);border:1px solid var(--accent-light);border-radius:.5rem;padding:.625rem .875rem;font-size:.875rem;color:var(--text-secondary)}
+.result-box strong{color:var(--accent-hover)}
+.tag{display:inline-block;font-size:.6875rem;padding:.125rem .5rem;border-radius:999px;background:var(--accent-light);color:var(--accent-hover);vertical-align:middle;margin-left:.375rem}
+
+/* Education & footer */
+.edu-extra{font-size:.875rem;color:var(--text-secondary);margin-top:.5rem}
+.footer{text-align:center;font-size:.8125rem;color:var(--text-tertiary);margin-top:2.25rem}
+
+@media(max-width:640px){
+  .container{padding:1rem .875rem 2rem}
+  .header{padding:1.75rem 1.25rem 1.5rem}
+  .section{padding:1.375rem 1.25rem}
+  .stats{grid-template-columns:repeat(2,1fr);gap:1rem .5rem}
+  .entry-head{flex-direction:column;gap:.125rem}
+}
+@page{size:A4;margin:9mm 11mm}
+@media print{
+  html{font-size:12px}
+  body{background:#fff}
+  .container{max-width:100%;padding:0}
+  .header{border-radius:.5rem;padding:1.125rem 1.25rem 1rem;-webkit-print-color-adjust:exact;print-color-adjust:exact;break-inside:avoid}
+  .name{font-size:1.875rem}
+  .contact-row{margin-top:.625rem}
+  .certs{margin-top:.625rem}
+  .stats{margin-top:.75rem;padding-top:.75rem}
+  .demo-links{margin-top:.625rem}
+  .section{box-shadow:none;border:none;padding:.5rem 0 0;margin-top:.25rem}
+  h2{font-size:1.25rem;padding-bottom:.375rem;margin-bottom:.5rem;break-after:avoid}
+  h3{break-after:avoid}
+  .summary p{margin-bottom:.45rem}
+  .skill-item{padding:.4rem 0;break-inside:avoid}
+  .entry{padding:.5rem 0;break-inside:avoid}
+  .work .entry{break-inside:auto}
+  .entry li{margin-bottom:.25rem;break-inside:avoid}
+  .entry-head{break-after:avoid}
+  .entry-role{break-after:avoid}
+  .entry-desc{break-after:avoid}
+  .entry ul{margin-top:.375rem}
+  .entry-desc{margin-top:.25rem}
+  .result-box{margin-top:.5rem;padding:.45rem .75rem;break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .cert-badge,.tag{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .footer{margin-top:.75rem}
+  a{color:inherit}
+  .demo-links a,.contact-row a{color:#fbbf24}
+}
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="header">
+    <h1 class="name">宋恒达</h1>
+    <span class="title-label">AI 产品经理 · Agent 应用与评测体系 | 大模型应用从 0 到 1 平台化落地</span>
+    <div class="contact-row">
+      <span>📱 <a href="tel:18946713255">189 4671 3255</a></span>
+      <span class="contact-divider">·</span>
+      <span>✉️ <a href="mailto:songhd822@126.com">songhd822@126.com</a></span>
+      <span class="contact-divider">·</span>
+      <span>🎓 物联网工程 本科 · 长春大学</span>
+      <span class="contact-divider">·</span>
+      <span>📍 现居北京</span>
+    </div>
+    <div class="certs">
+      <span class="cert-badge">PMP</span>
+      <span class="cert-badge">神策 SACA 认证分析师</span>
+      <span class="cert-badge">人人都是产品经理 · 专栏作家</span>
+      <span class="cert-badge">PMTalk 产品讲师</span>
+      <span class="cert-badge">飞书效率先锋</span>
+    </div>
+    <div class="stats">
+      <div><div class="stat-num">6+</div><div class="stat-label">AI 产品 0-1 落地</div></div>
+      <div><div class="stat-num">40 亿+</div><div class="stat-label">日均 Token 业务规模</div></div>
+      <div><div class="stat-num">750 万+</div><div class="stat-label">AI 项目累计降本（元）</div></div>
+      <div><div class="stat-num">15 天</div><div class="stat-label">vibe coding MVP 交付</div></div>
+    </div>
+    <div class="demo-links">独立作品（妙搭平台开发 · 有真实用户）：<a href="https://xw3elgcbph.aiforce.cloud/app/app_4jtef5d5esz37" target="_blank" rel="noopener">AI 销售对练系统（注册 206 人 · PV 5349）</a>·<a href="https://xw3elgcbph.aiforce.cloud/app/app_4jww6365hp3ew" target="_blank" rel="noopener">作品二</a></div>
+  </header>
+
+  <section class="section summary">
+    <h2><span class="section-emoji">📝</span>职业概述</h2>
+    <p>专注 Agent 应用与评测体系的 AI 产品经理，7 年产品经验、4 年大模型应用落地经验，现任华图教育（教育科技集团）AI 产品经理，+1 汇报 CTO。主导 <span class="metric">6 个以上</span> AI 产品从 0 到 1 落地并平台化，支撑日均 <span class="metric">40 亿 Token</span> 级生产环境业务，累计降本超 <span class="metric">750 万元</span>。</p>
+    <p>核心方法论是「先建评测、再上模型」：搭建覆盖<strong>静态分析、浏览器 Agent 测试、LLM-as-Judge 三层自动化 Grader</strong> 与真人双盲评测的完整评测平台，抽象评测原子能力，主导训练/验证/测评集构建与标注培训；曾与商业产品完成 169 条对比评测并建立成本模型支撑自建 vs 采购决策。掌握提示词工程、RAG、模型微调、Coze Workflow 编排与 MCP 工具链，熟知豆包、千问、文心等主流模型的能力边界与成本结构。</p>
+    <p>具备独立的 AI Coding 全栈交付能力：借助 vibe coding 与自创的「2+1」攻坚队模式，<span class="metric">15 天</span>完成 MVP、<span class="metric">30 天</span>上线前后端全流程业务系统；在妙搭平台独立开发多个有真实用户的 AI 应用。B 端功底扎实：主导 1.8 亿量级订单系统重构、CRM 联动企微生态、题库与督学系统 0-1 搭建，熟悉企业级系统的流程、权限与异常路径设计，具备 SQL / Python 数据分析能力。</p>
+  </section>
+
+  <section class="section">
+    <h2><span class="section-emoji">🎯</span>核心技能</h2>
+    <div class="skill-item">
+      <div class="skill-domain">Agent 与大模型工程化</div>
+      <div class="skill-caps">Agent 设计（长/短期记忆、动态角色生成、知识库构建）、Coze Workflow 编排、MCP 工具链配置与使用、提示词工程、RAG、模型微调、多模型选型与成本边界判断、高并发 AI 状态保持、日均 40 亿 Token 级业务运维</div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-domain">AI 评测与质量体系</div>
+      <div class="skill-caps">评测平台搭建、三层自动化 Grader（静态分析 / 浏览器 Agent 测试 / LLM-as-Judge）、真人双盲评测、评测原子能力抽象、训练/验证/测评集构建、标注团队培训、F1 指标体系、对标商业产品的对比评测与成本建模、全流程可观测性</div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-domain">AI Coding 与全栈交付</div>
+      <div class="skill-caps">vibe coding 独立交付（15 天 MVP / 30 天前后端全流程系统）、结构化 Spec 驱动 Claude Code、妙搭平台全栈开发、「2+1」攻坚队产研协作模式创立与推广</div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-domain">B 端系统与数据</div>
+      <div class="skill-caps">企业级系统设计（订单 / CRM / 题库 / 督学，1.8 亿订单量级重构）、流程与权限模型、SQL / Python 数据分析、用户画像与指标体系、可视化大盘（神策 SACA）</div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-domain">产品全生命周期管理</div>
+      <div class="skill-caps">0-1 产品搭建（B 端 & C 端）、市场调研、需求评估、PRD/MRD、技术选型、项目管理（PMP）、跨算法/研发/设计/业务团队拉通、团队招募与培养</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2><span class="section-emoji">🚀</span>核心项目经历</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>AI 会话质检系统<span class="tag">评测体系标杆 · 全生命周期负责</span></h3>
+        <span class="entry-meta">华图教育</span>
+      </div>
+      <div class="entry-desc">将全靠人力的会话质检 AI 化并规模化。核心难点不在模型调用，而在「让 AI 质检结果可信」——为此建立了从质检标准到评测流程的完整质量体系。</div>
+      <ul>
+        <li><strong>评测体系</strong>：与业务共建质检标准并转化为测评指标；主导训练集/验证集/测评集搭建与标注人员培训，搭建标准化测评流程，让 AI 结果可预期、可迭代</li>
+        <li><strong>方案设计</strong>：按质检任务分别设计 Prompt / RAG 方案，通过「案例 + 规则」微调让业务方可持续参与迭代，适配不同时期的质检要求</li>
+      </ul>
+      <div class="result-box">成果：对比人工成本降低 <strong>99.6%</strong>，各指标 F1 稳定在 <strong>0.9 以上</strong>，累计质检 <strong>5000 万</strong>会话，节省成本 <strong>749 万元</strong></div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>AI 培训师（课堂质量质检）<span class="tag">vibe coding 独立交付</span></h3>
+        <span class="entry-meta">华图教育</span>
+      </div>
+      <div class="entry-desc">自研课堂录音 AI 质检系统（对标商业产品麦盟）：录音采集 → 语音转写 → LLM 六维分析 → 报告自动分发。</div>
+      <ul>
+        <li><strong>极速交付</strong>：vibe coding + 「2+1」攻坚队模式，<strong>15 天完成 MVP 闭环、30 天上线基于妙搭的前后端全流程系统</strong>，单节点需求一天内响应上线</li>
+        <li><strong>对比评测与选型</strong>：与商业产品完成 169 条结果对比与功能矩阵评估；建立成本模型（1 小时音频 AI 分析成本 0.69 元），支撑自建 vs 采购决策——软件侧 300 人规模预估年省 28.4 万，硬件侧如实给出采购更优结论</li>
+        <li><strong>指标化定义质量</strong>：设计六维质检指标（内容精准度/教学逻辑力/节奏流畅度/互动引导力/情绪感染力/职业规范度），把主观质量转为可量化评估</li>
+      </ul>
+      <div class="result-box">成果：完成 <strong>175 堂课</strong> AI 分析试点，2026 年 6 月起分校陆续推广</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>AI 对练 Agent（销售教练）<span class="tag">Coze Agent · 妙搭独立开发</span></h3>
+        <span class="entry-meta">华图教育</span>
+      </div>
+      <div class="entry-desc">用 Agent 破解人员培训的规模化难题：基于真实画像与历史会话 Workflow 提炼，构建可对练、可评估的 AI 教练。</div>
+      <ul>
+        <li><strong>Agent 设计</strong>：在 Coze 平台搭建学员分身 Agent，RAG 动态生成多类型、多难度模拟对象；长期记忆（个人档案）+ 短期记忆（多轮对话）提升真实感</li>
+        <li><strong>知识库构建</strong>：从销冠对话提炼个人风格，汇集多体系知识切片构建 Agent 知识库，沉淀高频话术库</li>
+        <li><strong>可观测体系</strong>：针对记忆库、知识库、模型输出搭建全流程可观测指标，为规模化复制树立标准；新版对练系统由本人在妙搭平台独立开发上线（注册 206 人、PV 5349）</li>
+      </ul>
+      <div class="result-box">成果：新人上手时间降低 <strong>52%</strong>，培训成本降低 <strong>66%</strong>，覆盖 <strong>32 个分校</strong>，累计 <strong>35 万次</strong>对练，首单成交率提升 <strong>38%</strong></div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>AI 主观题批改<span class="tag">多模型评测选型</span></h3>
+        <span class="entry-meta">华图教育</span>
+      </div>
+      <div class="entry-desc">大模型 + RAG 实现主观题个性化批改并抑制幻觉，微调专用模型提升答题卡识别准确率。搭建评测平台，从质量/性能/成本/合规四维度实测豆包、千问、文心，确立「豆包主力 + 千问兜底」策略；真人双盲评测验证 AI 与人工批改能力对齐。</div>
+      <div class="result-box">成果：C 端日活 <strong>3 万人次</strong>，6 个月累计批改 <strong>300 万人次</strong>，成本节省 <strong>667 倍</strong></div>
+    </div>
+  </section>
+
+  <section class="section work">
+    <h2><span class="section-emoji">💼</span>工作经历</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>华图教育（教育科技集团）</h3>
+        <span class="entry-meta">2021.08 – 至今</span>
+      </div>
+      <div class="entry-role">AI 产品经理（历经 B 端 → C 端 → 数据 → AI 四段岗位演进，+1 汇报 CTO）</div>
+      <ul>
+        <li><strong>AI 产品</strong>：负责公司 AI 项目规划与应用落地，主责两大核心业务场景，承担需求评估、测评数据集建立、模型选型评估、AI 策略设计与持续迭代全流程</li>
+        <li><strong>B 端系统</strong>：主导 1.8 亿量级订单系统重构（响应提升 4 倍、崩溃率降至 0）、CRM 联动企微生态、题库与督学服务系统 0-1 搭建</li>
+        <li><strong>数据产品</strong>：负责用户画像、指标体系与可视化大盘；与算法团队协作调优高意向用户模型，转化率由 0.9% 提升至 <span class="metric">12%</span></li>
+        <li><strong>团队建设</strong>：产品人员招募培养与内部 AI 知识培训</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>北京爱学习博乐教育科技有限公司</h3>
+        <span class="entry-meta">2019.02 – 2021.08 · SaaS</span>
+      </div>
+      <div class="entry-role">产品经理</div>
+      <div class="entry-desc">主导核心 SaaS 产品体验升级与双师直播系统、用户账号中台搭建：产品架构 2.0 使核心行为转化率从 30% 提升至 65%，直播系统累计服务 184 万+ 用户、赋能 8000+ 机构；重构用户激励体系（成就/积分/金币/等级），核心行为频次环比增长 521%。</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2><span class="section-emoji">🎓</span>教育背景</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>长春大学 · 物联网工程 · 本科</h3>
+        <span class="entry-meta">2015 – 2019</span>
+      </div>
+      <div class="edu-extra">第十三届「博创杯」全国大学生嵌入式设计大赛<span class="metric">特等奖</span> · 计算机软件著作权 1 项 · 实用新型专利 1 项 · CET-4 · 全国计算机等级考试二级</div>
+    </div>
+  </section>
+
+  <footer class="footer">© 2026 宋恒达 · AI 产品经理（Agent 应用与评测体系）</footer>
+
+</main>
+</body>
+</html>
