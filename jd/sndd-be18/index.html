@@ -45,6 +45,16 @@ ul{list-style:none}
 .demo-links{margin-top:1.25rem;font-size:.8125rem;color:#a1a1aa}
 .demo-links a{color:#fbbf24;border-bottom:1px dashed rgba(251,191,36,.5);margin:0 .25rem}
 
+/* Mini-app QR card */
+.work-card{margin-top:1.25rem;display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:.75rem;padding:.75rem 1rem;text-align:left}
+.work-qr{width:84px;height:84px;border-radius:.5rem;background:#fff;flex:none;border:1px solid rgba(255,255,255,.2)}
+.work-info{min-width:0}
+.work-name{font-size:.9375rem;font-weight:600;color:#fbbf24}
+.work-type{font-size:.6875rem;font-weight:400;color:#d4d4d8;margin-left:.5rem;padding:.125rem .5rem;border:1px solid rgba(255,255,255,.18);border-radius:999px;vertical-align:middle}
+.work-desc{font-size:.8125rem;color:#a1a1aa;margin-top:.25rem;line-height:1.5}
+.work-scan{font-size:.75rem;color:#d4d4d8;margin-top:.375rem;letter-spacing:.05em}
+
+
 /* Sections */
 .section{background:var(--bg-card);border:1px solid var(--border-light);border-radius:var(--radius);box-shadow:var(--shadow-card);padding:1.75rem 2rem;margin-top:1.5rem}
 h2{font-family:var(--font-heading);font-size:1.5rem;font-weight:400;letter-spacing:-.01em;padding-bottom:.75rem;border-bottom:2px solid var(--accent-light);margin-bottom:1.25rem}
@@ -98,6 +108,9 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
   .certs{margin-top:.625rem}
   .stats{margin-top:.75rem;padding-top:.75rem}
   .demo-links{margin-top:.625rem}
+  .work-card{margin-top:.75rem;padding:.5rem .75rem;break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .work-qr{width:70px;height:70px}
+
   .section{box-shadow:none;border:none;padding:.5rem 0 0;margin-top:.25rem}
   h2{font-size:1.25rem;padding-bottom:.375rem;margin-bottom:.5rem;break-after:avoid}
   h3{break-after:avoid}
@@ -148,6 +161,14 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
       <div><div class="stat-num">750 万+</div><div class="stat-label">AI 项目累计降本（元）</div></div>
     </div>
     <div class="demo-links">独立作品（妙搭平台开发 · 有真实用户）：<a href="https://xw3elgcbph.feishuapp.com/app/app_4jtef5d5esz37" target="_blank" rel="noopener">AI 培训师 · 课堂质检系统</a>·<a href="https://xw3elgcbph.feishuapp.com/app/app_4jww6365hp3ew" target="_blank" rel="noopener">AI 销售对练系统（注册 206 人 · PV 5349）</a></div>
+    <div class="work-card">
+      <img class="work-qr" src="../../assets/wordapp-qr.jpg" alt="理科生背单词小程序二维码" width="84" height="84">
+      <div class="work-info">
+        <div class="work-name">理科生背单词<span class="work-type">微信小程序 · 独立开发</span></div>
+        <div class="work-desc">从背单词遗忘痛点出发，AI Coding 独立开发并上线的个人 C 端产品</div>
+        <div class="work-scan">扫码体验</div>
+      </div>
+    </div>
   </header>
 
   <section class="section summary">
