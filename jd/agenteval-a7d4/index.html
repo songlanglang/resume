@@ -116,9 +116,9 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
   h3{break-after:avoid}
   .summary p{margin-bottom:.45rem}
   .skill-item{padding:.4rem 0;break-inside:avoid}
-  .entry{padding:.5rem 0;break-inside:avoid}
+  .entry{padding:.4rem 0;break-inside:avoid}
   .work .entry{break-inside:auto}
-  .entry li{margin-bottom:.25rem;break-inside:avoid}
+  .entry li{margin-bottom:.2rem;break-inside:avoid}
   .entry-head{break-after:avoid}
   .entry-role{break-after:avoid}
   .entry-desc{break-after:avoid}
@@ -126,7 +126,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
   .entry-desc{margin-top:.25rem}
   .result-box{margin-top:.5rem;padding:.45rem .75rem;break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .cert-badge,.tag{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .footer{margin-top:.75rem}
+  .footer{margin-top:.25rem}
   a{color:inherit}
   .demo-links a,.contact-row a{color:#fbbf24}
 }
@@ -173,7 +173,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
 
   <section class="section summary">
     <h2><span class="section-emoji">📝</span>职业概述</h2>
-    <p>专注 Agent 应用与评测体系的 AI 产品经理，7 年产品经验、4 年大模型应用落地经验，现任华图教育（教育科技集团）AI 产品经理，+1 汇报 CTO。主导 <span class="metric">6 个以上</span> AI 产品从 0 到 1 落地并平台化，支撑日均 <span class="metric">40 亿 Token</span> 级生产环境业务，累计降本超 <span class="metric">750 万元</span>。</p>
+    <p>专注 Agent 应用与评测体系的 AI 产品经理，7 年产品经验、4 年大模型应用落地经验，现任华图教育（教育科技集团）AI 产品经理，+1 汇报 CTO。主导 <span class="metric">6 个以上</span> AI 产品从 0 到 1 落地并平台化，支撑日均 <span class="metric">40 亿 Token</span> 级生产环境业务（所负责两大 AI 项目占同期全公司 AI 算力成本 <span class="metric">88%</span>），累计降本超 <span class="metric">750 万元</span>。</p>
     <p>核心方法论是「先建评测、再上模型」：搭建覆盖<strong>静态分析、浏览器 Agent 测试、LLM-as-Judge 三层自动化 Grader</strong> 与真人双盲评测的完整评测平台，抽象评测原子能力，主导训练/验证/测评集构建与标注培训；曾与商业产品完成 169 条对比评测并建立成本模型支撑自建 vs 采购决策。掌握提示词工程、RAG、模型微调、Coze Workflow 编排与 MCP 工具链，熟知豆包、千问、文心等主流模型的能力边界与成本结构。</p>
     <p>具备独立的 AI Coding 全栈交付能力：借助 vibe coding 与自创的「2+1」攻坚队模式，<span class="metric">15 天</span>完成 MVP、<span class="metric">30 天</span>上线前后端全流程业务系统；在妙搭平台独立开发多个有真实用户的 AI 应用。B 端功底扎实：主导 1.8 亿量级订单系统重构、CRM 联动企微生态、题库与督学系统 0-1 搭建，熟悉企业级系统的流程、权限与异常路径设计，具备 SQL / Python 数据分析能力。</p>
   </section>
@@ -215,7 +215,8 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
         <li><strong>评测体系</strong>：与业务共建质检标准并转化为测评指标；主导训练集/验证集/测评集搭建与标注人员培训，搭建标准化测评流程，让 AI 结果可预期、可迭代</li>
         <li><strong>方案设计</strong>：按质检任务分别设计 Prompt / RAG 方案，通过「案例 + 规则」微调让业务方可持续参与迭代，适配不同时期的质检要求</li>
       </ul>
-      <div class="result-box">成果：对比人工成本降低 <strong>99.6%</strong>，各指标 F1 稳定在 <strong>0.9 以上</strong>，累计质检 <strong>5000 万</strong>会话，节省成本 <strong>749 万元</strong></div>
+        <li><strong>数据驱动迭代</strong>：搭建「项目 × 日期 × 模型」粒度的算力成本看板持续监控单位成本；2026 年 9 月切换 DeepSeek-V4-flash 多渠道架构（阿里 / 腾讯 / 火山三路接入），日均成本下降 <strong>27.8%</strong>，单次质检成本降至 <strong>0.027 元</strong></li>
+      <div class="result-box">成果：对比人工成本降低 <strong>99.6%</strong>，各指标 F1 稳定在 <strong>0.9 以上</strong>，累计质检 <strong>1.04 亿次</strong>会话质检（月稳态近 <strong>1,000 万次</strong> · 成功率 <strong>99.5%</strong>），节省成本 <strong>749 万元</strong></div>
     </div>
 
     <div class="entry">
@@ -252,7 +253,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
         <span class="entry-meta">华图教育</span>
       </div>
       <div class="entry-desc">大模型 + RAG 实现主观题个性化批改并抑制幻觉，微调专用模型提升答题卡识别准确率。搭建评测平台，从质量/性能/成本/合规四维度实测豆包、千问、文心，确立「豆包主力 + 千问兜底」策略；真人双盲评测验证 AI 与人工批改能力对齐。</div>
-      <div class="result-box">成果：C 端日活 <strong>3 万人次</strong>，6 个月累计批改 <strong>300 万人次</strong>，成本节省 <strong>667 倍</strong></div>
+      <div class="result-box">成果：C 端日活 <strong>3 万人次</strong>，上线 14 个月累计批改 <strong>394.8 万次</strong>（成功率 <strong>99.94%</strong> · 用户赞踩比 1.39），成本节省 <strong>667 倍</strong></div>
     </div>
   </section>
 
