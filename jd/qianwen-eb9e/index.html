@@ -188,6 +188,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
     <div class="skill-item">
       <div class="skill-domain">大模型应用与技术选型</div>
       <div class="skill-caps">豆包 / 千问 / 文心多模型实测与选型策略、提示词工程、RAG、模型微调、Agent 设计（长短期记忆）、成本与延迟边界判断、高并发 AI 状态保持、日均 40 亿 Token 级业务运维</div>
+      <div class="skill-caps">AI 培训师实践：稳定提示词前缀、章节级上下文管理、摘要存档与按需加载，兼顾长课堂分析连贯性与缓存复用</div>
     </div>
     <div class="skill-item">
       <div class="skill-domain">效果评测与策略迭代</div>
@@ -253,7 +254,10 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
         <span class="entry-meta">华图教育</span>
       </div>
       <div class="entry-desc">将人工质检场景 AI 化，并沉淀出可复用的标准化评测流程：与业务共建质检标准 → 转化为测评指标 → 主导训练集/验证集/测评集搭建与标注培训 → 用「案例 + 规则」微调支持业务方持续参与迭代。</div>
+      <ul>
+        <li><strong>上下文精简</strong>：按质检任务动态检索相关 Few-Shot 案例，对检索上下文做语义压缩，保留判定所需的关键事实，减少冗余 Token 输入与无关信息干扰</li>
         <li><strong>数据驱动迭代</strong>：搭建「项目 × 日期 × 模型」粒度的算力成本看板持续监控单位成本；2026 年 9 月切换 DeepSeek-V4-flash 多渠道架构（阿里 / 腾讯 / 火山三路接入），日均成本下降 <strong>27.8%</strong>，单次质检成本降至 <strong>0.027 元</strong></li>
+      </ul>
       <div class="result-box">成果：对比人工成本降低 <strong>99.6%</strong>，各指标 F1 分数稳定在 <strong>0.9 以上</strong>，累计完成 <strong>1.04 亿次</strong>会话质检（月稳态近 <strong>1,000 万次</strong> · 成功率 <strong>99.5%</strong>），节省成本 <strong>749 万元</strong></div>
     </div>
   </section>

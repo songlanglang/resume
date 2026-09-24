@@ -179,7 +179,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
     <h2><span class="section-emoji">🎯</span>核心技能</h2>
     <div class="skill-item">
       <div class="skill-domain">AI 应用与大模型工程化</div>
-      <div class="skill-caps">提示词工程、RAG、模型微调、Agent 设计（长/短期记忆、动态角色生成）、Coze Workflow 编排、MCP 工具链配置与使用、模型选型与成本边界判断、高并发 AI 状态保持、日均 40 亿 Token 级业务运维</div>
+      <div class="skill-caps">提示词工程、RAG、模型微调、Agent 设计（长/短期记忆、动态角色生成）、Coze Workflow 编排、MCP 工具链配置与使用、上下文缓存与分层管理、动态 Few-Shot 检索与语义压缩、模型选型与成本边界判断、高并发 AI 状态保持、日均 40 亿 Token 级业务运维</div>
     </div>
     <div class="skill-item">
       <div class="skill-domain">AI 评测与质量体系</div>
@@ -258,11 +258,12 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
       </div>
       <div class="entry-desc">销售质检以往全靠人力，成本高且效果不稳定。目标：用 AI 提升质检效果与效率，实现规模化。</div>
       <ul>
+        <li><strong>上下文精简</strong>：按质检任务动态检索相关 Few-Shot 案例，对检索上下文做语义压缩，保留判定所需的关键事实，减少冗余 Token 输入与无关信息干扰</li>
         <li><strong>产品全周期管理</strong>：设定项目目标，与业务共建质检标准，据此确定测评指标与方案；主导训练集/验证集/测评集搭建，培训标注人员</li>
         <li><strong>大模型方案设计</strong>：按质检任务分别设计 Prompt / RAG 方案，通过「案例 + 规则」微调让业务方可持续参与迭代，适配不同时期的质检要求</li>
         <li><strong>评测流程标准化</strong>：搭建标准化测评流程，让 AI 结果可预期、可迭代，为新场景引入树立标准</li>
-      </ul>
         <li><strong>数据驱动迭代</strong>：搭建「项目 × 日期 × 模型」粒度的算力成本看板持续监控单位成本；2026 年 9 月切换 DeepSeek-V4-flash 多渠道架构（阿里 / 腾讯 / 火山三路接入），日均成本下降 <strong>27.8%</strong>，单次质检成本降至 <strong>0.027 元</strong></li>
+      </ul>
       <div class="result-box">成果：对比人工成本降低 <strong>99.6%</strong>，各指标 F1 分数持续稳定在 <strong>0.9 以上</strong>，累计完成 <strong>1.04 亿次</strong>会话质检（月稳态近 <strong>1,000 万次</strong> · 成功率 <strong>99.5%</strong>），节省质检成本 <strong>749 万元</strong></div>
     </div>
 
@@ -288,6 +289,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
       </div>
       <div class="entry-desc">自研课堂录音 AI 质检系统（对标商业产品麦盟）：飞书录音豆采集 → 语音转写 → LLM 六维分析 → 报告自动分发，为教师授课质量提供可量化的 AI 评估。</div>
       <ul>
+        <li><strong>上下文缓存优化</strong>：围绕长课堂转写设计稳定提示词前缀与章节级上下文管理，结合摘要存档、按需加载，支撑缓存复用与成本控制，兼顾分析连贯性</li>
         <li><strong>极速交付</strong>：借助 vibe coding 与「2+1」攻坚队模式，<strong>15 天完成联动飞书多维表格的 MVP 闭环，30 天上线基于妙搭的前后端全流程业务系统</strong>，单节点需求一天内响应上线（报告页面重构仅用 1 天）</li>
         <li><strong>指标体系设计</strong>：定义内容精准度、教学逻辑力、节奏流畅度、互动引导力、情绪感染力、职业规范度六维质检指标，将「课讲得好不好」转化为可量化、可对比的结构化评估</li>
         <li><strong>对比评测与选型决策</strong>：与商业产品麦盟完成 169 条结果对比与完整功能矩阵评估；建立成本模型（AI 分析 1 小时音频成本 0.69 元），支撑自建 vs 采购决策——软件侧 300 人规模预估年省 28.4 万，硬件侧如实给出采购更优结论</li>

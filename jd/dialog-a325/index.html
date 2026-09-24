@@ -100,7 +100,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
 @page{size:A4;margin:9mm 11mm}
 @media print{
   html{font-size:12px}
-  body{background:#fff}
+  body{background:#fff;line-height:1.5}
   .container{max-width:100%;padding:0}
   .header{border-radius:.5rem;padding:1.125rem 1.25rem 1rem;-webkit-print-color-adjust:exact;print-color-adjust:exact;break-inside:avoid}
   .name{font-size:1.875rem}
@@ -212,11 +212,12 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
       </div>
       <div class="entry-desc">销售会话质检以往全靠人力，成本高且标准不稳定。目标：让 AI 承担标准化质检动作，人聚焦关键判断，实现质检的规模化与一致性。</div>
       <ul>
+        <li><strong>上下文精简</strong>：按质检任务动态检索相关 Few-Shot 案例，对检索上下文做语义压缩，保留判定所需的关键事实，减少冗余 Token 输入与无关信息干扰</li>
         <li><strong>质检标准共建</strong>：与业务共同定义质检标准并转化为可量化的测评指标；主导训练集/验证集/测评集搭建，培训标注人员</li>
         <li><strong>方案设计</strong>：按质检任务分别设计 Prompt / RAG 方案，通过「案例 + 规则」微调让业务方持续参与迭代，适配不同时期的质检要求；从海量会话中识别高频问题与异常信号，输出数据洞察反哺一线策略</li>
         <li><strong>评测流程标准化</strong>：搭建标准化测评流程，让 AI 质检结果可预期、可迭代，为新场景引入树立标准</li>
-      </ul>
         <li><strong>数据驱动迭代</strong>：搭建「项目 × 日期 × 模型」粒度的算力成本看板持续监控单位成本；2026 年 9 月切换 DeepSeek-V4-flash 多渠道架构（阿里 / 腾讯 / 火山三路接入），日均成本下降 <strong>27.8%</strong>，单次质检成本降至 <strong>0.027 元</strong></li>
+      </ul>
       <div class="result-box">成果：对比人工成本降低 <strong>99.6%</strong>，各指标 F1 稳定在 <strong>0.9 以上</strong>，累计质检 <strong>1.04 亿次</strong>会话质检（月稳态近 <strong>1,000 万次</strong> · 成功率 <strong>99.5%</strong>），节省成本 <strong>749 万元</strong></div>
     </div>
 
@@ -241,6 +242,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
       </div>
       <div class="entry-desc">自研课堂录音 AI 分析系统（对标商业产品麦盟）：录音采集 → 语音转写 → LLM 六维分析 → 报告自动分发，把长语音会话转化为结构化质量洞察。</div>
       <ul>
+        <li><strong>上下文缓存优化</strong>：围绕长课堂转写设计稳定提示词前缀与章节级上下文管理，结合摘要存档、按需加载，支撑缓存复用与成本控制，兼顾分析连贯性</li>
         <li><strong>指标体系</strong>：定义六维质量指标（内容精准度/教学逻辑力/节奏流畅度/互动引导力/情绪感染力/职业规范度），主观质量可量化、可对比</li>
         <li><strong>极速交付</strong>：vibe coding + 「2+1」攻坚队模式，15 天 MVP、30 天上线前后端全流程系统；与商业产品完成 169 条对比评测并建立成本模型（1 小时音频 0.69 元）支撑自建 vs 采购决策</li>
       </ul>

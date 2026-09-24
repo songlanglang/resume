@@ -246,6 +246,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
       </div>
       <div class="entry-desc">销售质检长期 100% 依赖人力，成本高且效果不稳定。目标：把它做成 AI 承担标准动作、人只做关键判断、质量可衡量的产品。</div>
       <ul>
+        <li><strong>上下文精简</strong>：按质检任务动态检索相关 Few-Shot 案例，对检索上下文做语义压缩，保留判定所需的关键事实，减少冗余 Token 输入与无关信息干扰</li>
         <li><strong>进业务现场定标准</strong>：与业务团队共建质检标准，把模糊的「服务态度好不好」拆成可判定的指标，据此确定测评方案；主导训练集/验证集/测评集搭建并培训标注人员</li>
         <li><strong>让业务方能自己迭代</strong>：按质检任务分别设计 Prompt / RAG 方案，通过「案例 + 规则」微调，使业务方在我不介入的情况下也能适配新时期的质检要求</li>
         <li><strong>沉淀为可复用标准</strong>：搭建标准化测评流程，让 AI 结果可预期、可迭代，为后续新场景引入树立了统一标准</li>
@@ -257,6 +258,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
   <section class="section">
     <h2><span class="section-emoji">💻</span>AI Coding 实践</h2>
     <ul class="plain-list">
+      <li><strong>AI 培训师上下文优化</strong>：设计稳定提示词前缀与章节级上下文管理，结合摘要存档、按需加载，兼顾长课堂分析连贯性与缓存复用</li>
       <li><strong>SDD（Spec 驱动开发）范式实践</strong>：以结构化 Spec 驱动 Claude Code 完成产品原型与技术验证，把「想清楚」和「做出来」压缩到同一个动作里，不等排期、不等完整需求文档</li>
       <li><strong>「2+1」先锋队模式</strong>：在团队内创立并推广的产研协作模式，用小队快速验证替代长流程评审，提升团队交付效率</li>
       <li><strong>个人实践</strong>：本份简历的在线版本即由 Spec 驱动 Claude Code 完成设计与部署（含响应式布局、打印分页优化、GitHub Actions 自动化部署）</li>

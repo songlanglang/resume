@@ -226,6 +226,7 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
       </div>
       <div class="entry-desc">自研课堂录音 AI 助教系统（对标商业产品麦盟）：录音采集 → 语音转写 → LLM 六维分析 → 报告分发，为教师授课质量提供可量化的智能体评估。</div>
       <ul>
+        <li><strong>上下文缓存优化</strong>：围绕长课堂转写设计稳定提示词前缀与章节级上下文管理，结合摘要存档、按需加载，支撑缓存复用与成本控制，兼顾分析连贯性</li>
         <li><strong>效果评估体系</strong>：定义内容精准度、教学逻辑力、节奏流畅度、互动引导力、情绪感染力、职业规范度六维指标，把「课讲得好不好」转化为可量化、可对比的评估——对标 JD 的准确性/有用性/满意度体系</li>
         <li><strong>极速原型验证</strong>：vibe coding + 「2+1」攻坚队，15 天完成 MVP、30 天上线前后端全流程系统，单节点需求一天内响应上线</li>
         <li><strong>成本控制与选型</strong>：与商业产品完成 169 条对比评测；建成本模型（1 小时音频 0.69 元），支撑自建 vs 采购决策</li>
@@ -252,7 +253,10 @@ h3{font-family:var(--font-heading);font-size:1.125rem;font-weight:500}
         <span class="entry-meta">华图教育</span>
       </div>
       <div class="entry-desc">将人力会话质检 AI 化：与业务共建质检标准并转化为测评指标，按任务分别设计 Prompt / RAG 方案，通过「案例 + 规则」微调让业务方持续参与迭代，搭建标准化测评流程让结果可预期。</div>
+      <ul>
+        <li><strong>上下文精简</strong>：按质检任务动态检索相关 Few-Shot 案例，对检索上下文做语义压缩，保留判定所需的关键事实，减少冗余 Token 输入与无关信息干扰</li>
         <li><strong>数据驱动迭代</strong>：搭建「项目 × 日期 × 模型」粒度的算力成本看板持续监控单位成本；2026 年 9 月切换 DeepSeek-V4-flash 多渠道架构（阿里 / 腾讯 / 火山三路接入），日均成本下降 <strong>27.8%</strong>，单次质检成本降至 <strong>0.027 元</strong></li>
+      </ul>
       <div class="result-box">成果：对比人工成本降低 <strong>99.6%</strong>，各指标 F1 稳定在 <strong>0.9 以上</strong>，累计质检 <strong>1.04 亿次</strong>会话质检（月稳态近 <strong>1,000 万次</strong> · 成功率 <strong>99.5%</strong>），节省成本 <strong>749 万元</strong></div>
     </div>
   </section>
