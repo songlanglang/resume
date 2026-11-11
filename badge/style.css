@@ -5,3 +5,12 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}.project:hover{transform:none}}
 @media print{.nav,.hero,.projects,.builder,footer,.section-heading,.live-status{display:none}.section{margin:0;padding:0}iframe{border:0;width:100%}}
 @media(max-width:700px){.note-two{display:none}}
+/* The rigid body's origin is its centre of mass; its slot is a physical attachment. */
+.badge-motion{transform-origin:50% 50%}
+.badge-tilt{transform:none}
+.lanyard{display:none}
+.rope-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.clip{top:0;left:0;transform-origin:12px 2px;z-index:1}
+.badge-motion{z-index:2}
+.floating-note{z-index:3}
+@media(max-width:700px){.floating-note{display:none}}
